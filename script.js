@@ -1,3 +1,4 @@
+// Override default scrolling behaviour
 $(document).ready(function () {
   $('a').on('click', function (event) {
     if (this.hash !== '') {
@@ -7,7 +8,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        1000,
+        800,
         function () {
           window.location.hash = hash;
         },
@@ -16,6 +17,7 @@ $(document).ready(function () {
   });
 });
 
+// Resizing the background
 var width = $(window).width();
 
 window.onscroll = function () {
@@ -31,6 +33,7 @@ window.onscroll = function () {
   }
 };
 
+// Control the time and display of the animation spinner
 setTimeout(function () {
   $('#loading').addClass('animated fadeOut');
   setTimeout(function () {
