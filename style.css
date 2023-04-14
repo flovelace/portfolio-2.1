@@ -4,7 +4,7 @@ html {
     margin: 0px;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    color: #fff;
+    color: #f5f5f5;
     background: rgb(0, 0, 0);
     scroll-behavior: smooth;
 }
@@ -31,6 +31,7 @@ html {
     margin: 0;
 }
 
+/* Spinner rotation */
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -41,7 +42,7 @@ html {
     }
 }
 
-#header {
+#head {
     width: 80%;
     padding: 4% 10%;
     text-align: center;
@@ -49,28 +50,22 @@ html {
     transition: 0.6s ease-in-out;
 }
 
-#header div {
+#head div {
     display: block;
 }
 
 #title {
-    font-size: 40px;
-    background-image: linear-gradient(to left, #3d3d3d 0%, #f5f5f5 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% 500% !important;
-    -webkit-animation: Gradient 20s ease infinite;
-    -moz-animation: Gradient 20s ease infinite;
-    -o-animation: Gradient 20s ease infinite;
-    animation: Gradient 20s ease infinite;
+    font-size: 6rem;
+    color: #f5f5f5;
     font-family: 'Comfortaa', cursive;
 }
 
 #links {
-    margin: 40px 0px;
+    display: flex;
+    align-items: center;
     transition: 0.6s ease-in-out;
-    color: #fff;
+    font-size: 1.75rem;
+    color: #f5f5f5;
 }
 
 #links a {
@@ -83,7 +78,7 @@ html {
 }
 
 #links a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #f5f5f5;
 }
 
 #middle {
@@ -92,7 +87,7 @@ html {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("./assets/img/background.jpg") center center fixed;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    color: white;
+    color: #f5f5f5;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -100,8 +95,12 @@ html {
     padding-top: 20vh;
 }
 
+#middle p {
+    font-size: 1.5rem;
+}
+
 #tagline {
-    font-size: 50px;
+    font-size: 3rem;
     width: 60%;
 }
 
@@ -110,9 +109,9 @@ html {
     padding: 2% 10%
 }
 
-#portfolio div h1 {
-    font-size: 40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+#portfolio div h2 {
+    font-size: 2.5rem;
+    background-image: linear-gradient(to left, #777777 0%, #c5c0bf 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -122,6 +121,11 @@ html {
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
     font-family: 'Comfortaa', cursive;
+}
+
+.p-copy {
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 #skills {
@@ -160,4 +164,168 @@ html {
 
 .project div {
     font-weight: normal;
+}
+
+.btn-two {
+    color: #000;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid #f5f5f5;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    background: #f5f5f5;
+    transition: 0.6s ease-in-out;
+    margin: 30px 10px;
+}
+
+.btn-two:hover {
+    background: transparent;
+    cursor: pointer;
+    color: #f5f5f5;
+}
+
+#details {
+    margin: 6vh 0px;
+}
+
+#footer {
+    width: 100%;
+    padding: 10vh 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#footer a {
+    font-size: 18px;
+    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% 500% !important;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    -o-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    #header {
+        width: 94%;
+        padding: 15% 3%;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #links {
+        margin: 30px 0px;
+    }
+
+    #links a {
+        margin: 0px;
+    }
+
+    #middle {
+        width: 100%;
+        border-radius: 0px;
+        height: 80vh;
+        background-size: cover;
+    }
+
+    #tagline {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .btn_one {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .btn_two {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    #contact form input {
+        width: 92%;
+    }
+
+    #contact form textarea {
+        width: 92%;
+    }
+
+    .btn_social {
+        font-size: 14px;
+        margin: 10px;
+        padding: 10px 11px;
+    }
 }
