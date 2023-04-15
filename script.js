@@ -1,9 +1,9 @@
-// Override default scrolling behaviour
+// Override default anchor scrolling behaviour
 $(document).ready(function () {
   $('a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
-      var hash = this.hash;
+      let hash = this.hash;
       $('body,html').animate(
         {
           scrollTop: $(hash).offset().top,
@@ -18,7 +18,7 @@ $(document).ready(function () {
 });
 
 // Resizing the background
-var width = $(window).width();
+let width = $(window).width();
 
 window.onscroll = function () {
   if (width >= 900) {
