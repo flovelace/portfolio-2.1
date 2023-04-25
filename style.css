@@ -2,7 +2,7 @@ body,
 html {
     padding: 0px;
     margin: 0px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', serif;
     font-weight: bold;
     color: #f5f5f5;
     background: rgb(0, 0, 0);
@@ -57,7 +57,7 @@ html {
 #title {
     font-size: 6rem;
     color: #f5f5f5;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', serif
 }
 
 #links {
@@ -274,6 +274,77 @@ button:focus {
     }
 }
 
+#footer {
+    width: 100%;
+    padding: 10vh 0px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 /* Media queries */
 @media (max-width: 900px) {
     #header {
@@ -282,27 +353,22 @@ button:focus {
     }
 
     #title {
-        font-size: 30px;
+        font-size: 6rem;
     }
 
     #links {
-        margin: 30px 0px;
-    }
-
-    #links a {
-        margin: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     #middle {
         width: 100%;
-        border-radius: 0px;
-        height: 80vh;
         background-size: cover;
     }
 
     #tagline {
         width: 90%;
-        font-size: 30px;
+        font-size: rem;
     }
 
     .btn_one {
@@ -315,11 +381,7 @@ button:focus {
         padding: 8px 20px;
     }
 
-    #contact form input {
-        width: 92%;
-    }
-
-    #contact form textarea {
+    #contact {
         width: 92%;
     }
 
@@ -329,3 +391,22 @@ button:focus {
         padding: 10px 11px;
     }
 }
+
+/* Media queries smaller screens */
+
+@media (max-width: 375px) {
+    #title {
+        font-size: 3.5rem;
+    }
+
+    #links {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #tagline {
+        justify-content: center;
+    }
+}
+
