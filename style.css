@@ -136,6 +136,10 @@ html {
     padding: 2vh 0px !important;
 }
 
+#work div h4 {
+    font-size: 1.5rem;
+}
+
 #contact {
     margin: 4vh 0px !important;
     padding: 2vh 0px !important;
@@ -341,7 +345,7 @@ button:focus {
 
 /* Media queries */
 @media (max-width: 900px) {
-    #header {
+    #head {
         width: 94%;
         padding: 15% 3%;
     }
@@ -350,7 +354,7 @@ button:focus {
         font-size: 6rem;
     }
 
-    #links {
+    #links a {
         display: flex;
         justify-content: center;
     }
@@ -360,9 +364,14 @@ button:focus {
         background-size: cover;
     }
 
+    #tagline-container {
+        margin-top: 300px;
+    }
+
     #tagline {
-        width: 90%;
-        font-size: rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.75rem;
     }
 
     .btn_one {
