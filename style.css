@@ -123,7 +123,7 @@ html {
 
 .p-copy {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5;
 }
 
 #skills {
@@ -158,10 +158,6 @@ html {
     background: #f5f5f5;
     cursor: pointer;
     color: #000;
-}
-
-.project div {
-    font-weight: normal;
 }
 
 .btn-two {
