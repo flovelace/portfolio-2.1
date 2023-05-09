@@ -135,12 +135,12 @@ html {
     padding: 2vh 0px !important;
 }
 
-#tech-container {
+.tech-container {
     display: flex;
     justify-content: space-between;
 }
 
-i {
+.tech-container i {
     font-size: 5rem;
 }
 
@@ -390,8 +390,17 @@ button:focus {
         font-size: 1.75rem;
     }
 
-    #tech-container i {
-        font-size: 2.5rem;
+    .tech-container {
+        flex-wrap: wrap;
+    }
+
+    .tech-container i {
+        font-size: 3.5em;
+        line-height: 1.5;
+    }
+
+    .tech-container>* {
+        flex: 1 1 80px;
     }
 
     .btn-one {
