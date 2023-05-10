@@ -286,12 +286,13 @@ button:focus {
     }
 }
 
-#footer {
+#year {
     width: 100%;
-    padding: 10vh 0px;
+    padding: 2vh 0px;
     text-align: center;
     font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+
 }
 
 button:focus {

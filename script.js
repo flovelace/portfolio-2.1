@@ -41,3 +41,11 @@ setTimeout(function () {
     $('#loading').css('display', 'none');
   }, 600);
 }, 1250);
+
+// Get the date for the footer
+let currentYear = new Date().getFullYear();
+
+// Update the footer
+document.getElementById(
+  'year',
+).innerHTML = `Designed & Developed by Ada Hoeg &copy ${currentYear}`;
