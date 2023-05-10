@@ -47,5 +47,5 @@ let currentYear = new Date().getFullYear();
 
 // Update the footer
 document.getElementById(
-  'year',
+  'footer-copy',
 ).innerHTML = `Designed & Developed by Ada Hoeg &copy ${currentYear}`;
