@@ -343,6 +343,16 @@ button:focus {
 }
 
 /* Media queries */
+@media (max-width: 1265px) {
+    #heading {
+        width: 100%;
+    }
+
+    #middle  {
+        background-size: cover;
+    }
+}
+
 @media (max-width: 900px) {
     #heading {
         width: 94%;
@@ -389,12 +399,12 @@ button:focus {
     }
 
     .btn-one {
-        font-size: 14px;
+        font-size: 1rem;
         padding: 8px 20px;
     }
 
     .btn-two {
-        font-size: 14px;
+        font-size: 1rem;
         padding: 8px 20px;
     }
 
@@ -403,7 +413,7 @@ button:focus {
     }
 
     .btn-social {
-        font-size: 14px;
+        font-size: 1rem;
         margin: 10px;
         padding: 10px 11px;
     }
