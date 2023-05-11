@@ -405,6 +405,19 @@ html {
         flex: 1 1 80px;
     }
 
+    .socials-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .socials-list>* {
+        flex: 1 1 80px;
+    }
+
+    .socials-list-item {
+        font-size: 3.5em;
+    }
+
     .btn-one {
         font-size: 1rem;
         padding: 8px 20px;
