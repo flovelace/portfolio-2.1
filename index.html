@@ -1,169 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ada Hoeg - web developer</title>
     <!-- cdns -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/img/portfolio-favicon.jpg" type="jpeg">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/portfolio-favicon.jpg"
+      type="jpeg"
+    />
     <!-- scripts -->
     <script src="script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/eef06e274a.js"             crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/eef06e274a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- loading spinner -->
     <div id="loading">
-        <div id="spinner"></div>
+      <div id="spinner"></div>
     </div>
     <!-- header -->
     <header>
-        <div id="heading" class="animated slideInDown" style="animation-delay:  1.8s;">
-            <div id="title-container">
-                <h1 id="title">
-                    Ada Hoeg
-                </h1>
-            </div>
-            <!-- nav -->
-            <nav>
-                <div id="links">
-                    <a href="#skills">skills</a>
-                    <a href="#work">work</a>
-                    <a href="#contact">contact</a>
-                </div>
-            </nav>
+      <div
+        id="heading"
+        class="animated slideInDown"
+        style="animation-delay: 1.8s"
+      >
+        <div id="title-container">
+          <h1 id="title">Ada Hoeg</h1>
         </div>
+        <!-- nav -->
+        <nav>
+          <div id="links">
+            <a href="#skills">skills</a>
+            <a href="#work">work</a>
+            <a href="#contact">contact</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- aside -->
     <aside>
-        <center>
-            <div id="middle">
-                <div id="tagline-container">
-                    <h2 id="tagline">
-                        web developer
-                    </h2>
-                    <!-- <p id="tagline-copy">
+      <center>
+        <div id="middle">
+          <div id="tagline-container">
+            <h2 id="tagline">web developer</h2>
+            <!-- <p id="tagline-copy">
                         Lorem ipsum dolor
                     </p> -->
-                    <div id="button-container">
-                        <a href="./assets/files/Ada-Hoeg-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-one">view resume.
-                        </a>
-                    </div>
-                </div>
+            <div id="button-container">
+              <a
+                href="./assets/files/Ada-Hoeg-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-one"
+                >view resume.
+              </a>
             </div>
-        </center>
+          </div>
+        </div>
+      </center>
     </aside>
     <!-- main -->
     <main>
-        <div id="portfolio">
-            <!-- skills -->
-            <section id="skills">
-                <h3>skills.</h3>
-                <p class="p-copy">
-                    Hello there - nice to meet you! My name is Ada, and I'm a web developer and QA engineer based out of
-                    Toronto, Canada!
-                </p>
-                <div class="tech-container">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-python-plain-wordmark colored"></i>
-                    <i class="devicon-django-plain-wordmark"></i>
-                    <i class="devicon-vuejs-plain-wordmark colored"></i>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-jquery-plain-wordmark colored"></i>
-                    <i class="devicon-mysql-plain-wordmark colored"></i>
-                    <i class="devicon-jest-plain"></i>
-                </div>
-            </section>
-            <!-- work -->
-            <section id="work">
-                <h3>work.</h3>
-                <!-- project 1 -->
-                <div class="projects">
-                    <h4>Clean React portfolio</h4>
-                    <div>
-                        <p class="p-copy">
-                        An easy-to-edit portfolio template with a clean design, and light/dark mode capability. Content is dynamically generated, and can be easily edited from the config.js file.
-                        </p>
-                    </div>
-                    <a href="http://clean-react-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="btn-one">live site.
-                    </a>
-                    <a href="https://github.com/flovelace/clean-react-portfolio" target="_blank" rel="noopener noreferrer"
-                    class="btn-two">view code.
-                    </a>
-                </div>
-                <!-- project 2 -->
-                <div class="projects">
-                    <h4>My Little Pokédex</h4>
-                    <div>
-                        <p class="p-copy">
-                            Using the Pokémon API, this project was created as a personal challenge to use an accessible dark colour palette, and vanilla JavaScript.
-                        </p>
-                    </div>
-                    <a href="https://flovelace.github.io/my-little-pokedex/" target="_blank" rel="noopener noreferrer"
-                        class="btn-one">live site.
-                    </a>
-                    <a href="https://github.com/flovelace/my-little-pokedex" target="_blank" rel="noopener noreferrer"
-                        class="btn-two">view code.
-                    </a>
-                </div>
-                <!-- project 3 -->
-                <div class="projects">
-                    <h4>Delve Into the Dungeon</h4>
-                    <div>
-                        <p class="p-copy">
-                            This is a clean design page with a dark mode theme with a focus on helping people find interesting music within the dungeon synth genre. It was created as a personal challenge  to use pure HTML5 and CSS3 to create a responsive and accessible page.
-                        </p>
-                    </div>
-                    <a href="https://flovelace.github.io/delve-into-the-dungeon/" target="_blank" rel="noopener noreferrer"
-                        class="btn-one">live site.
-                    </a>
-                    <a href="https://github.com/flovelace/delve-into-the-dungeon" target="_blank" rel="noopener noreferrer"
-                        class="btn-two">view code.
-                    </a>
-                </div>
-            </section>
-        
-            <section id="contact">
-                <h3>contact.</h3>
-                <div id="details">
-                    <ul class="socials-list">
-                        <!-- github -->
-                        <li class="socials-list-item">
-                            <a href="https://github.com/flovelace" target="_blank" rel="noopener noreferrer"    class="btn-social">
-                                <i class="fa-brands fa-github fa-2xl fa-fade"
-                                style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6; color: #cecece;">
-                                </i>&nbsp;Github                               
-                            </a>
-                        </li>
-                        <!-- linkedIn -->
-                        <li class="socials-list-item">
-                            <a href="https://www.linkedin.com/in/adahoeg/" target="_blank" rel="noopener noreferrer" class="btn-social">
-                                <i class="fa-brands fa-linkedin fa-2xl fa-fade"
-                                style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6; color: #cecece;">
-                                </i>&nbsp;LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+      <div id="portfolio">
+        <!-- skills -->
+        <section id="skills">
+          <h3>skills.</h3>
+          <p class="p-copy">
+            Hello there - nice to meet you! My name is Ada, and I'm a web
+            developer and QA engineer based out of Toronto, Canada!
+          </p>
+          <div class="tech-container">
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-django-plain-wordmark"></i>
+            <i class="devicon-vuejs-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-jest-plain"></i>
+          </div>
+        </section>
+        <!-- work -->
+        <section id="work">
+          <h3>work.</h3>
+          <!-- project 1 -->
+          <div class="projects">
+            <h4>Clean React portfolio</h4>
+            <div>
+              <p class="p-copy">
+                An easy-to-edit portfolio template with a clean design, and
+                light/dark mode capability. Content is dynamically generated,
+                and can be easily edited from the config.js file.
+              </p>
+            </div>
+            <a
+              href="http://clean-react-portfolio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-one"
+              >live site.
+            </a>
+            <a
+              href="https://github.com/flovelace/clean-react-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-two"
+              >view code.
+            </a>
+          </div>
+          <!-- project 2 -->
+          <div class="projects">
+            <h4>My Little Pokédex</h4>
+            <div>
+              <p class="p-copy">
+                Using the Pokémon API, this project was created as a personal
+                challenge to use an accessible dark colour palette, and vanilla
+                JavaScript.
+              </p>
+            </div>
+            <a
+              href="https://flovelace.github.io/my-little-pokedex/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-one"
+              >live site.
+            </a>
+            <a
+              href="https://github.com/flovelace/my-little-pokedex"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-two"
+              >view code.
+            </a>
+          </div>
+          <!-- project 3 -->
+          <div class="projects">
+            <h4>Delve Into the Dungeon</h4>
+            <div>
+              <p class="p-copy">
+                This is a clean design page with a dark mode theme with a focus
+                on helping people find interesting music within the dungeon
+                synth genre. It was created as a personal challenge to use pure
+                HTML5 and CSS3 to create a responsive and accessible page.
+              </p>
+            </div>
+            <a
+              href="https://delve-into-the-dungeon.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-one"
+              >live site.
+            </a>
+            <a
+              href="https://github.com/flovelace/delve-into-the-dungeon-react"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-two"
+              >view code.
+            </a>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h3>contact.</h3>
+          <div id="details">
+            <ul class="socials-list">
+              <!-- github -->
+              <li class="socials-list-item">
+                <a
+                  href="https://github.com/flovelace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-social"
+                >
+                  <i
+                    class="fa-brands fa-github fa-2xl fa-fade"
+                    style="
+                      --fa-animation-duration: 2s;
+                      --fa-fade-opacity: 0.6;
+                      color: #cecece;
+                    "
+                  >
+                  </i
+                  >&nbsp;Github
+                </a>
+              </li>
+              <!-- linkedIn -->
+              <li class="socials-list-item">
+                <a
+                  href="https://www.linkedin.com/in/adahoeg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-social"
+                >
+                  <i
+                    class="fa-brands fa-linkedin fa-2xl fa-fade"
+                    style="
+                      --fa-animation-duration: 2s;
+                      --fa-fade-opacity: 0.6;
+                      color: #cecece;
+                    "
+                  >
+                  </i
+                  >&nbsp;LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- footer -->
     <footer>
-        <p id="footer-copy"></p>
+      <p id="footer-copy"></p>
     </footer>
-    
-</body>
+  </body>
 </html>
